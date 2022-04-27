@@ -1,6 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
 # # Willkommen zum Ordnungsrechner 
 # ## Der Ordnungsrechner berechnet die Ordnung eines bestimmten Elements in einer Gruppe mit der Multiplikation und/oder Addition als Verknüpfung!
 
