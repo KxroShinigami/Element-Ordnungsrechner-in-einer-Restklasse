@@ -13,23 +13,23 @@ Verknüpfung = None
 while(type(modulo) != int):
     try:
         print("\nBitte geben Sie eine gültige Ganzzahl ein.")
-        modulo = int(input("Modulo n der Restklasse: "))
+        modulo = int(input("\nModulo n der Restklasse: "))
     except Exception as e:
-        print("\nFehlercode: ", e)
+        print("\n\n\nFehlercode: ", e)
 
 while(type(element) != int):
     try:
         print("\nBitte geben Sie eine gültige Ganzzahl ein.")
-        element = int(input("Element g, deren Ordnung bestimmt werden muss: "))
+        element = int(input("\nElement g, deren Ordnung bestimmt werden muss: "))
     except Exception as e:
-        print("\nFehlercode: ", e)
+        print("\n\n\nFehlercode: ", e)
 
 while(Verknüpfung != "+" and Verknüpfung != "*" and Verknüpfung != "Beide"):
     try:
         print("\nBitte geben Sie eine gültige Verknüpfung (+, *, Beide) ein.")
-        Verknüpfung = input("Verknüpfung, welche in der Gruppe herrscht: ")
+        Verknüpfung = input("\nVerknüpfung, welche in der Gruppe herrscht: ")
     except Exception as e:
-        print("\nFehlercode: ", e)
+        print("\n\n\nFehlercode: ", e)
 
 
 # ### Multiplikative Verknüpfung:
@@ -37,7 +37,7 @@ while(Verknüpfung != "+" and Verknüpfung != "*" and Verknüpfung != "Beide"):
 
 
 if(Verknüpfung == "*" or Verknüpfung == "Beide"):
-    
+    print("\nMultiplikative Verknüpfung\n")
     
     teileranzahl = 0
     teiler = []
@@ -74,16 +74,16 @@ if(Verknüpfung == "*" or Verknüpfung == "Beide"):
             break
             
     if(ordnung == None): # Abfangabfrage, wenn sich die Ordnung des Elements nicht berechnen lässt, da z.b. die Eingabe falsch war oder die Ordnung nicht errechenbar ist in dem Körper
-        print("Bei der Berechnung der Ordnung ist entweder ein Fehler unterlaufen oder es kann keine Ordnung für dieses Element in dem Körper mit einer multiplikativen Verknüpfung berechnet werden. Überprüfen Sie ihre Eingabe oder kontaktieren Sie den Hersteller")
+        print("\n\n\nBei der Berechnung der Ordnung ist entweder ein Fehler unterlaufen oder es kann keine Ordnung für dieses Element in dem Körper mit einer multiplikativen Verknüpfung berechnet werden. Überprüfen Sie ihre Eingabe oder kontaktieren Sie den Hersteller")
     else:
-        print("Die Ordnung des Elements ", element, " in der Restklasse ", modulo, " ist: ", ordnung)
+        print("\nDie Ordnung des Elements ", element, " in der Restklasse ", modulo, " mit der multiplikativen Verknüpfung ist: ", ordnung)
 
 
 # ### Additive Verknüpfung:
 
 
 if(Verknüpfung == "+" or Verknüpfung == "Beide"):
-
+    print("\nAdditive Verknüpfung\n")
 
     ordnung = None
     ergebnis = None
@@ -97,8 +97,8 @@ if(Verknüpfung == "+" or Verknüpfung == "Beide"):
 
 
     if(ordnung == None): # Abfangabfrage, wenn sich die Ordnung des Elements nicht berechnen lässt, da z.b. die Eingabe falsch war oder die Ordnung nicht errechenbar ist in dem Körper
-        print("Bei der Berechnung der Ordnung ist entweder ein Fehler unterlaufen oder es kann keine Ordnung für dieses Element in dem Körper mit einer multiplikativen Verknüpfung berechnet werden. Überprüfen Sie ihre Eingabe oder kontaktieren Sie den Hersteller")
+        print("\n\n\nBei der Berechnung der Ordnung ist entweder ein Fehler unterlaufen oder es kann keine Ordnung für dieses Element in dem Körper mit einer multiplikativen Verknüpfung berechnet werden. Überprüfen Sie ihre Eingabe oder kontaktieren Sie den Hersteller")
     elif(ergebnis != 0):
-        print("Das Element ", element, " in der Restklasse ", modulo, " hat keine Ordnung")
+        print("\nDas Element ", element, " in der Restklasse ", modulo, " mit der additiven Verknüpfung hat keine Ordnung")
     else:
-        print("Die Ordnung des Elements ", element, " in der Restklasse ", modulo, " ist: ", ordnung)
+        print("\nDie Ordnung des Elements ", element, " in der Restklasse ", modulo, " mit der additiven Verknüpfung ist: ", ordnung)
