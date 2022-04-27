@@ -4,9 +4,6 @@
 # # Willkommen zum Ordnungsrechner 
 # ## Der Ordnungsrechner berechnet die Ordnung eines bestimmten Elements in einer Gruppe mit der Multiplikation und/oder Addition als Verknüpfung!
 
-# In[8]:
-
-
 # Initialisierung
 
 modulo = None
@@ -41,8 +38,6 @@ while(Verknüpfung != "+" and Verknüpfung != "*" and Verknüpfung != "Beide"):
 # ### Multiplikative Verknüpfung:
 # ##### Teileranzahl und Teiler von n-1 bestimmen:
 
-# In[2]:
-
 
 if(Verknüpfung == "*" or Verknüpfung == "Beide"):
     
@@ -50,12 +45,6 @@ if(Verknüpfung == "*" or Verknüpfung == "Beide"):
     teileranzahl = 0
     teiler = []
     zaehler = 0
-
-
-# In[3]:
-
-
-if(Verknüpfung == "*" or Verknüpfung == "Beide"):
 
 
     for zaehler in range(1, int(((modulo-1)/2)+1)): # Die for-Schleife findet alle echten Teiler von n-1 und die 1
@@ -75,21 +64,10 @@ if(Verknüpfung == "*" or Verknüpfung == "Beide"):
 
 # ##### Nun wird nach der Ordnung des Elementes g geschaut:
 
-# In[4]:
-
-
-if(Verknüpfung == "*" or Verknüpfung == "Beide"):
-
 
     index = 0
     ordnung = None
     ergebnis = None
-
-
-# In[5]:
-
-
-if(Verknüpfung == "*" or Verknüpfung == "Beide"):
 
 
     for index in range(teileranzahl):
@@ -106,20 +84,12 @@ if(Verknüpfung == "*" or Verknüpfung == "Beide"):
 
 # ### Additive Verknüpfung:
 
-# In[6]:
-
 
 if(Verknüpfung == "+" or Verknüpfung == "Beide"):
 
 
     ordnung = None
     ergebnis = None
-
-
-# In[9]:
-
-
-if(Verknüpfung == "+" or Verknüpfung == "Beide"):
 
 
     for ordnung in range(1, modulo):
@@ -135,10 +105,3 @@ if(Verknüpfung == "+" or Verknüpfung == "Beide"):
         print("Das Element ", element, " in der Restklasse ", modulo, " hat keine Ordnung")
     else:
         print("Die Ordnung des Elements ", element, " in der Restklasse ", modulo, " ist: ", ordnung)
-
-
-# In[ ]:
-
-
-
-
