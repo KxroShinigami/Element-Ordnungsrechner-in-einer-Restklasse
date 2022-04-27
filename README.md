@@ -12,14 +12,22 @@ Für eine weitere Erläuterung einer Ordnung eines Gruppenelements, siehe: [Ordn
 ![Ordnungsdefinition](https://wikimedia.org/api/rest_v1/media/math/render/svg/3c163afaa8f541e4aea6ffec4d41636b92c960d8)
 
 ## Installation
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+Man kann entweder Python auf dem eigenen Computer installieren und das Programm herunterladen und ausführen, oder man nutzt einen [Online Python Compiler](https://www.online-python.com)
 
 ```
-Give examples
-```
 
-End with an example of getting some data out of the system or using it for a little demo.
+```
 
 ## Verwendung
 
-Add notes about how to use the system.
+Bei der Verwendung des Programmes ist auf die Eingabe zu achten. Es gibt Exception Handling, also falls etwas Falsches eingegeben wird, dann wird man aufgefordert seine Eingabe zu prüfen.
+
+### Zur Eingabe:
+Es gibt 3 Eingabevariablen:
+
+| Variablen   | Eingabemöglichkeiten | Beschreibung                                  |
+|-------------|----------------------|-----------------------------------------------|
+| modulo      | Ganzzahlen / Int     | Modulo n der Restklasse                       |
+| element     | Ganzzahlen / Int     | Element g, deren Ordnung bestimmt werden muss |
+| Verknüpfung | + / * / Beide        | Verknüpfung in einer Gruppe                   |
+
