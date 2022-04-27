@@ -14,109 +14,146 @@ Für eine weitere Erläuterung einer Ordnung eines Gruppenelements, siehe: [Ordn
 ## Installation
 Man kann entweder Python auf dem eigenen Computer installieren und das Programm herunterladen und ausführen, oder man nutzt einen [Online Python Compiler](https://www.online-python.com)
 
-Beispiel 1: Exception Handling & Eingabeüberprüfung
-```
+Folgende Beispiele wurden mit dem Online Python Compiler erzeugt.
 
+### Beispiel 1: Exception Handling & Eingabeüberprüfung
+```
 Bitte geben Sie eine gültige Ganzzahl ein.
+
 Modulo n der Restklasse: 
 abc
+
+
 
 Fehlercode:  invalid literal for int() with base 10: 'abc'
 
 Bitte geben Sie eine gültige Ganzzahl ein.
+
 Modulo n der Restklasse: 
 123
 
 Bitte geben Sie eine gültige Ganzzahl ein.
+
 Element g, deren Ordnung bestimmt werden muss: 
 abc
+
+
 
 Fehlercode:  invalid literal for int() with base 10: 'abc'
 
 Bitte geben Sie eine gültige Ganzzahl ein.
+
 Element g, deren Ordnung bestimmt werden muss: 
 123
 
 Bitte geben Sie eine gültige Verknüpfung (+, *, Beide) ein.
+
 Verknüpfung, welche in der Gruppe herrscht: 
 -
 
 Bitte geben Sie eine gültige Verknüpfung (+, *, Beide) ein.
+
 Verknüpfung, welche in der Gruppe herrscht: 
-+
-Die Ordnung des Elements  123  in der Restklasse  123  ist:  1
+*
+
+Multiplikative Verknüpfung
+
+Teileranzahl:  4
+Die Teiler sind:  [1, 2, 61, 122]
+
+
+
+Bei der Berechnung der Ordnung ist entweder ein Fehler unterlaufen oder es kann keine Ordnung für dieses Element in dem Körper mit einer multiplikativen Verknüpfung berechnet werden. Überprüfen Sie ihre Eingabe oder kontaktieren Sie den Hersteller
 
 
 ** Process exited - Return Code: 0 **
-Press Enter to exit terminal
 ```
 
-Beispiel 2: Additive Verknüpfung
+### Beispiel 2: Additive Verknüpfung
 ```
-
 Bitte geben Sie eine gültige Ganzzahl ein.
+
 Modulo n der Restklasse: 
 100
 
 Bitte geben Sie eine gültige Ganzzahl ein.
+
 Element g, deren Ordnung bestimmt werden muss: 
 2
 
 Bitte geben Sie eine gültige Verknüpfung (+, *, Beide) ein.
+
 Verknüpfung, welche in der Gruppe herrscht: 
 +
-Die Ordnung des Elements  2  in der Restklasse  100  ist:  50
+
+Additive Verknüpfung
+
+
+Die Ordnung des Elements  2  in der Restklasse  100  mit der additiven Verknüpfung ist:  50
 
 
 ** Process exited - Return Code: 0 **
-Press Enter to exit terminal
 ```
 
-Beispiel 3: Multiplikative Verknüpfung
+### Beispiel 3: Multiplikative Verknüpfung
 ```
-
 Bitte geben Sie eine gültige Ganzzahl ein.
+
 Modulo n der Restklasse: 
 719
 
 Bitte geben Sie eine gültige Ganzzahl ein.
+
 Element g, deren Ordnung bestimmt werden muss: 
 33
 
 Bitte geben Sie eine gültige Verknüpfung (+, *, Beide) ein.
+
 Verknüpfung, welche in der Gruppe herrscht: 
 *
+
+Multiplikative Verknüpfung
+
 Teileranzahl:  4
 Die Teiler sind:  [1, 2, 359, 718]
-Die Ordnung des Elements  33  in der Restklasse  719  ist:  718
+
+Die Ordnung des Elements  33  in der Restklasse  719  mit der multiplikativen Verknüpfung ist:  718
 
 
 ** Process exited - Return Code: 0 **
-Press Enter to exit terminal
 ```
 
-Beispiel 4: Beide Verknüpfungen
+### Beispiel 4: Beide Verknüpfungen
 ```
-
 Bitte geben Sie eine gültige Ganzzahl ein.
+
 Modulo n der Restklasse: 
-179
+719
 
 Bitte geben Sie eine gültige Ganzzahl ein.
+
 Element g, deren Ordnung bestimmt werden muss: 
 37
 
 Bitte geben Sie eine gültige Verknüpfung (+, *, Beide) ein.
+
 Verknüpfung, welche in der Gruppe herrscht: 
 Beide
+
+Multiplikative Verknüpfung
+
 Teileranzahl:  4
-Die Teiler sind:  [1, 2, 89, 178]
-Die Ordnung des Elements  37  in der Restklasse  179  ist:  178
-Das Element  37  in der Restklasse  179  hat keine Ordnung
+Die Teiler sind:  [1, 2, 359, 718]
+
+Die Ordnung des Elements  37  in der Restklasse  719  mit der multiplikativen Verknüpfung ist:  359
+
+Additive Verknüpfung
+
+
+Das Element  37  in der Restklasse  719  mit der additiven Verknüpfung hat keine Ordnung
 
 
 ** Process exited - Return Code: 0 **
-Press Enter to exit terminal
 ```
 
 ## Verwendung
